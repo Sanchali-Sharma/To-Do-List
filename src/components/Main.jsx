@@ -23,24 +23,24 @@ function Main() {
     
   return (
     <div class="flex min-w-full">
-    <div class="max-w-[50%] h-full">
+    <div class="max-w-[50%] w-[50%] h-full">
         <Quote/>
         <form class="min-h-[50%] flex-col flex justify-evenly items-center " onSubmit={handleSubmit}>
             <div class="">
-                <input 
+                <input class="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md "
                 required={true}
                 type="text" 
                 placeholder="Add a task" 
                 name="task"/>
             </div>
             <div>
-                <input 
+                <input class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 "
                 required={true}
                 type="date"  
                 name="duedate"/>
             </div>
             <div>
-                <button>Add</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add</button>
             </div>
       </form>
     </div>
